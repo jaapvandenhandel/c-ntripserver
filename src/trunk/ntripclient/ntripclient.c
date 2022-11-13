@@ -1661,7 +1661,7 @@ int main(int argc, char **argv)
                           if(nmeabuffer[nmeabufpos] != buf[j])
                           {
                             if(nmeabufpos == 2) nmeabuffer[nmeabufpos++] = buf[j++];
-                            if(nmeabufpos) nmeabufpos = 0;
+                            else if(nmeabufpos) nmeabufpos = 0;
                             else ++j;
                           }
                           else
